@@ -1,0 +1,2 @@
+# splash
+LogYard Splash Page
