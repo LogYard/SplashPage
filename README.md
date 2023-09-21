@@ -1,3 +1,3 @@
-# LogYard Splash Page
+# Welcome to LogYard
 
-Addin a lil splashy splash for the homie LogYard
+For all you logging management and visualization needs
