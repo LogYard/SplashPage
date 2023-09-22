@@ -1,10 +1,39 @@
+/* text imports */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 
+/* tailwind config */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom css */
 #root {
   width: 100vw;
   height: 100vh;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #5e3c09e1);
+}
+
+@keyframes  logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 30s linear;
+  }
+}
+
+/* a:nth-of-type(2)  */
