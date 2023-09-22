@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {},
       fontFamily: {
-				'Caveat': ['Caveat', 'sans-serif']
+				'Kanit': ['Kanit', 'cursive']
 			},
     },
   },
