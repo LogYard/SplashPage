@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+import NavBar from './Navbar.jsx';
 import DirectionsForInstall from './DirectionsForInstall.jsx';
 import DirectionsForUse from './DirectionsForUse.jsx';
 import TeamSection from './TeamSection.jsx';
@@ -11,9 +12,7 @@ const App = () => {
     <div className='font-Caveat text-white'>
 
       {/* navbar */}
-      <nav className='bg-black h-24 content-center'>
-        <img src="PageLogo.png" alt="" className='h-20 pt-4 mx-auto'/>
-      </nav>
+      {<NavBar/>}
 
       {/* rotating logo */}
       <a id='rotating-logo' href="https://github.com/oslabs-beta/LogYard">
@@ -48,7 +47,7 @@ const App = () => {
 
       {/* directions for installing app */}
       <div>
-        <div className='ml-10 font-medium text-5xl text-center'> Install Our Product </div>
+        <div className='ml-10 pb-6 font-medium text-5xl text-center'> Install Our Product </div>
         {<DirectionsForInstall/>}
       </div>
 
@@ -57,7 +56,7 @@ const App = () => {
 
       {/* directions for using app */}
       <div>
-        <div className='ml-10 font-medium text-5xl text-center'> Use Our Product </div>
+        <div className='ml-10 pb-6 font-medium text-5xl text-center'> Use Our Product </div>
         {<DirectionsForUse/>}
       </div>
 
@@ -66,7 +65,7 @@ const App = () => {
 
       {/* team section */}
       <section id='meet-the-team' className='pb-24'>
-        <div className='ml-10 font-medium text-5xl text-center'> Our Team </div>
+        <div className='ml-10 pb-6 font-medium text-5xl text-center'> Our Team </div>
         {<TeamSection/>}
       </section>
 
