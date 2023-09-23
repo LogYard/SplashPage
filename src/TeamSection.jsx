@@ -39,7 +39,7 @@ const TeamSection = () => {
     {
       name: 'Brian Hwang',
       role: 'Software Developer',
-      photo: 'public/BrianHeadshot.jpg',
+      photo: 'BrianHeadshot.jpeg',
       motto: 'Loves looking at this splash page so freaking much',
       githubURL: 'https://github.com/bri-engineer',
       linkedinURL: 'https://www.linkedin.com/in/brianhwang2/'
