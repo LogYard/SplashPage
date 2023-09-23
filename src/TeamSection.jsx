@@ -10,7 +10,7 @@ const TeamSection = () => {
       photo: 'PrestonHeadshot.jpeg',
       motto: 'Loves working on this splash page so freaking much',
       githubURL: 'https://github.com/PrestonColdwell',
-      linkedinURL: 'www.linkedin.com/in/prestoncoldwell'
+      linkedinURL: 'https://www.linkedin.com/in/prestoncoldwell/'
     },
     {
       name: 'Ryan Smithey',
@@ -18,7 +18,7 @@ const TeamSection = () => {
       photo: 'RyanHeadshot.jpg',
       motto: 'Loves looking at this splash page so freaking much',
       githubURL: 'https://github.com/RyanSmithey',
-      linkedinURL: 'www.linkedin.com/in/ryan-smithey'
+      linkedinURL: 'https://www.linkedin.com/in/ryan-smithey/'
     },
     {
       name: 'Geoffrey Sun',
@@ -75,6 +75,8 @@ const TeamSection = () => {
                     <li>
                       <a
                         href={member.githubURL}
+                        rel='noopener noreferrer'
+                        target='_blank'
                         className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                       >
                         <svg
@@ -94,6 +96,8 @@ const TeamSection = () => {
                     <li>
                       <a
                         href={member.linkedinURL}
+                        rel='noopener noreferrer'
+                        target='_blank'
                         className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                       >
                         <svg className="w-6 h-6 mt-0.5"
