@@ -53,7 +53,7 @@ const TeamSection = () => {
           
           {teamMembers.map((member) => {
             return (
-              <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+              <div className="items-center flex bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                   <img
                     className="max-h-72 px-4 py-4"
