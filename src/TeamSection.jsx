@@ -54,13 +54,13 @@ const TeamSection = () => {
           {teamMembers.map((member) => {
             return (
               <div className="items-center flex bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
+                <div>
                   <img
                     className="max-h-72 px-4 py-4"
                     src={member.photo}
                     alt=""
                   />
-                </a>
+                </div>
                 <div className="p-5">
                   <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                     {member.name}
