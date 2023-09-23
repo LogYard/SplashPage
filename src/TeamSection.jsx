@@ -56,7 +56,7 @@ const TeamSection = () => {
               <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                   <img
-                    className="max-h-72 pl-4"
+                    className="max-h-72 px-4 py-4"
                     src={member.photo}
                     alt=""
                   />
