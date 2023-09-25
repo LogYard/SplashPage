@@ -47,7 +47,7 @@ Our mission is to simplify log management for our users. With our custom logging
     - Sort and filter logs based on level and customizable properties.
     - Save custom filters to your account.
     - Visualize your logs through several graph types. Using log-type filtering and time selection, only visualize the logs you need.
-
+<!-- 
 ## Walkthrough
 
 - Login / Signup
@@ -60,7 +60,7 @@ Our mission is to simplify log management for our users. With our custom logging
 
 - Visualizer
 
-    <img width='' src='VISUALIZER GIF'/>GIF
+    <img width='' src='VISUALIZER GIF'/>GIF -->
 
 # <img width='20px' src='./public/Icon.png'/> Demo Our Product
 
@@ -86,6 +86,8 @@ We created a demo project for you to easily test our product's logging functiona
 
     6. To open the LogYard application, click on the port for ...
 
+    7. Filter and visualize your data - see how [here](#Using-GUI).
+
 2. Demo App
 
     1. Navigate to our [demo app's GitHub repository](https://www.google.com/).
@@ -102,15 +104,15 @@ We created a demo project for you to easily test our product's logging functiona
 
 - After following the above steps, the demo app should now be visible on localhost:0000 and the LogYard GUI should be available on localhost:9999.
 
-    4. Implement our package into the demo app using [these steps](#Using).
+    4. Implement our package into the demo app using [these steps](#Using-packages).
 
 # <img width='20px' src='./public/Icon.png'/> Use Our Product
 
 In order to start logging in your application and using LogYard, follow the steps below to install the proper dependencies.
 
-## 1. Installing and Using Logging Packages
+## 1. Logging Packages
 
-### Installing
+### Installing packages
 
 1. Navigate to the directory in which you would like to install our packages. This should be the root directory for your project.
 
@@ -120,7 +122,7 @@ In order to start logging in your application and using LogYard, follow the step
 
     `npm install logyardbackend`
 
-### Using
+### Using packages
 
 1. Navigate to the file that you would like to use the logger in. 
 
@@ -165,9 +167,12 @@ Directions here...
 ## 3. Setting up .config file(s)
 Directions here...
 
-## 4. Installing and Using LogYard GUI
+## 4. LogYard GUI
+
+### Installing GUI
 ... copy directions from demo...
 
+### Using GUI
 For any inquiries about installation or usage, please feel free to contact the team at logyardOSP@gmail.com.
 
 # <img width='20px' src='./public/Icon.png' /> FAQ
@@ -183,6 +188,9 @@ For any inquiries about installation or usage, please feel free to contact the t
 
 4. Can I use this for state replication?
     - LogYard does not provide state replication. It is intended as a lightweight solution for active logging analysis not an all encompassing tool.
+
+5. What if my app is running on port 8080?
+    - answer
 
 # <img width='20px' src='./public/Icon.png' /> Contributing
 We hope you enjoy using our product and find it useful! 
