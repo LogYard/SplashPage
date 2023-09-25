@@ -1,6 +1,6 @@
 ![README Banner](./public/READMEBanner.png)
 
-# <img width='20px' src='./public/Icon.png'> Built With
+# <div style='color: #D8C1AB'><img width='20px' src='./public/Icon.png'> Built With</div>
 ![JavaScript](https://img.shields.io/badge/-javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![React](https://img.shields.io/badge/-react-white?style=for-the-badge&logo=react&logoColor=blue)
 ![ReactRouter](https://img.shields.io/badge/-ReactRouter-white?style=for-the-badge&logo=ReactRouter&logoColor=blue)
@@ -25,10 +25,10 @@
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 <br>
 
-# <img width='20px' src='./public/Icon.png'> Introduction
+# <div style='color: #D8C1AB'><img width='20px' src='./public/Icon.png'> Introduction</div>
 Our mission is to simplify log management for our users. With our custom npm logging package that seamlessly integrates into your code, alongside the LogYard application, you can easily visualize and analyze logs using various graphs based on various timeframes and log types. Our platform also offers dynamic log filtering, allowing users to group logs as well as filter them based on their individual properties. These features aim to make log management a breeze - helping you to make monitoring and troubleshooting effortless. 
 
-# <img width='20px' src='./public/Icon.png'> Features
+# <div style='color: #D8C1AB'><img width='20px' src='./public/Icon.png'> Features</div>
 - Logging Package
     - Our custom npm logging package enables you to record both your frontend and backend logs and have them stored safely in a local Docker/MongoDB database.
     - Logs have various customizable attributes:
@@ -41,7 +41,7 @@ Our mission is to simplify log management for our users. With our custom npm log
     - Save custom filters to your account.
     - Visualize your logs through several graph types. Using log-type filtering and time selection, only visualize the logs your need.
 
-# <img width='20px' src='./public/Icon.png'> How to Install
+# <div style='color: #D8C1AB'><img width='20px' src='./public/Icon.png'> How to Install</div>
 
 In order to start logging in your application and using LogYard's application, follow the steps below to install the proper dependencies.
 
@@ -59,7 +59,7 @@ Once the dependencies have been installed, follow the instructions in the 'How t
 
 For any inquiries about installation or usage, please feel free to contact the team at logyardOSP@gmail.com.
 
-# <img width='20px' src='./public/Icon.png'> How to Use
+# <div style='color: #D8C1AB'><img width='20px' src='./public/Icon.png'> How to Use</div>
 
 Due to some interactions between the browser and ___ , we need to have two logging packages (one for the frontend and one for the backend) in order to reliably send, store and retrieve your logs.
 
@@ -76,7 +76,7 @@ Due to some interactions between the browser and ___ , we need to have two loggi
             - Any message you wish to be sent with the log.
         - Context(s) (Type: Object) :
             - Key-value pairs for each context you wish to include.
-        ```env
+        ```JavaScript
             Template:
             logyard(
                 [Error Type] , 
@@ -114,17 +114,17 @@ Following the completion of your outstanding work, if you create a PR, our team 
 - [ ] Rebuild using Bun.io
 - [ ] Some other things that are less important than Bun ...
 
-# <img width='20px' src='./public/Icon.png'> Publications
+# <div style='color: #D8C1AB'><img width='20px' src='./public/Icon.png'> Publications</div>
 - Link to various article(s) - Medium, etc.
 
-# <img width='20px' src='./public/Icon.png'> Our Team
+# <div style='color: #D8C1AB'><img width='20px' src='./public/Icon.png'> Our Team</div>
 | [<img src="./public/PrestonHeadshot.jpeg" width="100px" >](https://www.linkedin.com/in/prestoncoldwell/) | [<img src="./public/RyanHeadshot.jpg" width="100px" >](https://www.linkedin.com/in/ryan-smithey/) | [<img src="./public/GeoffHeadshot.png" width="100px" >](https://www.linkedin.com/in/geoffrey-sun/) | [<img src="./public/AndyHeadshot.jpeg" width="100px" >](https://www.linkedin.com/in/andrewclarkwagner/) | [<img src="./public/BrianHeadshot.jpeg" width="100px" >](https://www.linkedin.com/in/brianhwang2/) |
 | ------------- | ------------- |------------- | ------------- | ------------- |
-| <div style="background-color: blue, text-align: center, color: #FF69B4">Preston Coldwell</div>  <div style="text-align: center">[<img src="./public/githubIcon.png" width="20px" >](https://github.com/PrestonColdwell) [<img src="./public/linkedInLogo.png" width="22px" >](https://www.linkedin.com/in/prestoncoldwell/)</div> | <div style="text-align: center">Ryan Smithey</div>  <div style="text-align: center">[<img src="./public/githubIcon.png" width="20px" >](https://github.com/RyanSmithey) [<img src="./public/linkedInLogo.png" width="22px" >](https://www.linkedin.com/in/ryan-smithey/)</div> | <div style="text-align: center">Geoffrey Sun</div>  <div style="text-align: center">[<img src="./public/githubIcon.png" width="20px" >](https://github.com/geoffsun2) [<img src="./public/linkedInLogo.png" width="22px" >](https://www.linkedin.com/in/geoffrey-sun/)</div> | <div style="text-align: center">Andy Wagner</div>  <div style="text-align: center">[<img src="./public/githubIcon.png" width="20px" >](https://github.com/a-c-wagner) [<img src="./public/linkedInLogo.png" width="22px" >](https://www.linkedin.com/in/andrewclarkwagner/)</div> | <div style="text-align: center">Brian Hwang</div>  <div style="text-align: center">[<img src="./public/githubIcon.png" width="20px" >](https://github.com/bri-engineer) [<img src="./public/linkedInLogo.png" width="22px" >](https://www.linkedin.com/in/brianhwang2/)</div> |
+| <div style="text-align: center">Preston Coldwell</div>  <div style="text-align: center">[<img src="./public/githubIcon.png" width="20px" >](https://github.com/PrestonColdwell) [<img src="./public/linkedInLogo.png" width="22px" >](https://www.linkedin.com/in/prestoncoldwell/)</div> | <div style="text-align: center">Ryan Smithey</div>  <div style="text-align: center">[<img src="./public/githubIcon.png" width="20px" >](https://github.com/RyanSmithey) [<img src="./public/linkedInLogo.png" width="22px" >](https://www.linkedin.com/in/ryan-smithey/)</div> | <div style="text-align: center">Geoffrey Sun</div>  <div style="text-align: center">[<img src="./public/githubIcon.png" width="20px" >](https://github.com/geoffsun2) [<img src="./public/linkedInLogo.png" width="22px" >](https://www.linkedin.com/in/geoffrey-sun/)</div> | <div style="text-align: center">Andy Wagner</div>  <div style="text-align: center">[<img src="./public/githubIcon.png" width="20px" >](https://github.com/a-c-wagner) [<img src="./public/linkedInLogo.png" width="22px" >](https://www.linkedin.com/in/andrewclarkwagner/)</div> | <div style="text-align: center">Brian Hwang</div>  <div style="text-align: center">[<img src="./public/githubIcon.png" width="20px" >](https://github.com/bri-engineer) [<img src="./public/linkedInLogo.png" width="22px" >](https://www.linkedin.com/in/brianhwang2/)</div> |
 
-# <img width='20px' src='./public/Icon.png'> Acknowledgments
+# <div style='color: #D8C1AB'><img width='20px' src='./public/Icon.png'> Acknowledgements</div>
 - [OSLabs](https://github.com/open-source-labs)
 
 
-# <img width='20px' src='./public/Icon.png'> Support Us
+# <div style='color: #D8C1AB'><img width='20px' src='./public/Icon.png'> Support Us</div>
 If our product has helped you, or you would just like to show your support, please ⭐️ this repository! It helps more than you know!
