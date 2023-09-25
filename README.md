@@ -85,23 +85,26 @@ We created a demo project for you to easily test our product's logging functiona
         
         `npm run dev`
 - After following the above steps, the demo app should now be visible on localhost:0000 and the LogYard GUI should be available on localhost:9999.
-    4. Implement our package into the demo app using [these steps](#Installing-/-Using-Logging-Packages)
+    4. Implement our package into the demo app using [these steps](#Using)
 
 # <img width='20px' src='./public/Icon.png'/> Use Our Product
 
 In order to start logging in your application and using LogYard, follow the steps below to install the proper dependencies.
 
-## Installing / Using Logging Packages
+## 1. Installing and Using Logging Packages
 Note: If you are navigating here from the demo section, please skip to step 3.
+### Installing
 1. Navigate to the directory in which you would like to install our packages. This should be the root directory for your project.
 2. In your terminal, type the following command to install the appropriate packages for frontend and backend logging capabilities.
 
     `npm install logyard logyardbackend`
-3. Navigate to the file that you would like to use the logger in. 
-4. At the top of your file, import the appropriate logger using one of the following line of code: 
+
+### Using
+1. Navigate to the file that you would like to use the logger in. 
+2. At the top of your file, import the appropriate logger using one of the following line of code: 
     - Frontend: `import logyard from 'logyard'`
     - Backend: `import logyard from 'logyardbackend'`
-5. Once the frontend logger has been imported, embed the 'logyard' function with the following argument options and by following the template below.
+3. Once the frontend logger has been imported, embed the 'logyard' function with the following argument options and by following the template below.
     - Arguments:
         - Error Type (Type: String) : 
             - 'error', 'warn', 'info', 'http', 'verbose', 'debug', or 'silly'.
@@ -125,13 +128,13 @@ Note: If you are navigating here from the demo section, please skip to step 3.
             )
         ```
 
-## Setting up .env file
+## 2. Setting up .env file
 Directions here...
 
-## Setting up .config file(s)
+## 3. Setting up .config file(s)
 Directions here...
 
-## Installing / Using LogYard GUI
+## 4. Installing and Using LogYard GUI
 ... copy directions from demo...
 
 For any inquiries about installation or usage, please feel free to contact the team at logyardOSP@gmail.com.
