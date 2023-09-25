@@ -170,10 +170,6 @@ Directions here...
 
 For any inquiries about installation or usage, please feel free to contact the team at logyardOSP@gmail.com.
 
-# <img width='20px' src='./public/Icon.png'> How to Use
-
-Due to some interactions between the browser and ___ , we need to have two logging packages (one for the frontend and one for the backend) in order to reliably send, store, and retrieve your logs.
-
 # <img width='20px' src='./public/Icon.png' /> FAQ
 
 1. Why do two seperate packages exist for logging?
