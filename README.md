@@ -81,11 +81,11 @@ Due to some interactions between the browser and ___ , we need to have two loggi
             logyard(
                 'errorType' , 
                 'Message' , 
-                { [ 
+                {
                     Context1Key: Context1Value, 
                     Context2Key: Context2Value,
-                    etc: etc, 
-                ] } 
+                    AndSoOn: AndSoOn, 
+                } 
             );
             
             // Example:
@@ -93,7 +93,7 @@ Due to some interactions between the browser and ___ , we need to have two loggi
                 'error', 
                 'authController.setCookie failure', 
                 { 
-                    Location: controllers/authController 
+                    Location: controllers/authController,
                     Container: myStoreAuthManager
                 }
             )
