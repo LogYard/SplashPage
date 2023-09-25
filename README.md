@@ -77,18 +77,25 @@ Due to some interactions between the browser and ___ , we need to have two loggi
         - Context(s) (Type: Object) :
             - Key-value pairs for each context you wish to include.
         ```JavaScript
-            Template:
+            // Template:
             logyard(
-                [Error Type] , 
-                [Message] , 
-                { [ Context(s) ] } 
+                'errorType' , 
+                'Message' , 
+                { [ 
+                    Context1Key: Context1Value, 
+                    Context2Key: Context2Value,
+                    etc: etc, 
+                ] } 
             );
             
-            Example:
+            // Example:
             logyard(
                 'error', 
                 'authController.setCookie failure', 
-                { Location: controllers/authController }
+                { 
+                    Location: controllers/authController 
+                    Container: myStoreAuthManager
+                }
             )
         ```
 
