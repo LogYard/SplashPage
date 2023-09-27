@@ -167,10 +167,26 @@ In order to start logging in your application and using LogYard the LogYard GUI,
 2. Change VITE_USER_PASSWORD to whatever you'd like your log in 'server password' to be.
 
 
-<!-- ## 3. Setting up .config file(s)
-Directions here... -->
+## 3. Setting up .config file
+1. In your project's root directory, create a new directory named 'config'.
+2. Within this new 'config' directory, create a new file titled 'default.json'.
+3. Copy and paste the following code into your newly created 'default.json' file.
+    ```json
+        {
+            "uri": "mongodb://localhost:5555",
+            "level": "silly",
+            "dbName": "LogYard"
+        }
+    ```
+4. Optional: Modify these 'default.json' variables to meet your needs.
+    - uri: URI for which your database will connect to
+    - level: Level at which all logs and below will be collected and sent to the database and thus, to the LogYard GUI.  
+    All logs collected at level 'silly'.
+    - dbName: The name for which you would like your database to be saved under.
 
-## 3. LogYard GUI
+## 4. LogYard GUI
+
+Note: If you have already installed the GUI from the demo, 
 
 1. Ensure you have Docker Desktop installed and opened, and that you are signed in with your Docker account.
 
