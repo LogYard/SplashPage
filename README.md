@@ -94,7 +94,7 @@ We created a demo project for you to easily test our product's logging functiona
     4. Interacting with the demo app will generate logs that can be seen in the LogYard GUI! Go ahead and give it a try - filter and visualize these logs!
 
         <img width='' src='./public/GIF/SaveFilter.gif'/>
-        <img width='' src='placeholder.jpg'/> Visualizer GIF
+        <img width='' src='./public/GIF/GraphFilterAndTime.gif'/>
     
         We hope you find our product useful. Once you're done, implement the logger package into your own application to view your own logs in our app! (see [below](#Use-Our-Product))
 
@@ -196,7 +196,7 @@ Directions here... -->
 7. Interacting with your app to invoke your logging functions will populate them in the LogYard application, allowing them to be analyzed, filtered, and visualized!
 
     <img width='' src='./public/GIF/SaveFilter.gif'/>
-    <img width='' src='placeholder.jpg'/> Visualizer GIF
+    <img width='' src='./public/GIF/GraphFilterAndTime.gif'/> 
 
 # <img width='20px' src='./public/Icon.png' /> FAQ
 
@@ -211,9 +211,6 @@ Directions here... -->
 
 4. Can I use this for state replication?
     - LogYard does not provide state replication. It is intended as a lightweight solution for active logging analysis not an all encompassing tool.
-
-5. What if my app is running on port 5555?
-    - answer
 
 # <img width='20px' src='./public/Icon.png' /> Contributing
 We hope you enjoy using our product and find it useful! 
@@ -231,7 +228,7 @@ Following the completion of your outstanding work, if you create a PR, our team 
 - [ ] Improved C3 integrations. C3 is a powerful graphing tool however it directly effects the DOM unlike React which uses a virtual DOM. A major task would be to improve the current interface between C3 and React. Specifically more a more responsive layout for graphs allowing a more customizable visualization page.
 
 # <img width='20px' src='./public/Icon.png'> Publications
-- Link to various article(s) - Medium, etc.
+- Medium.com Article (NEED TO LINK)
 
 # <img width='20px' src='./public/Icon.png'> Our Team
 | [<img src="./public/PrestonHeadshot.jpeg" width="100px" >](https://www.linkedin.com/in/prestoncoldwell/) | [<img src="./public/RyanHeadshot.jpg" width="100px" >](https://www.linkedin.com/in/ryan-smithey/) | [<img src="./public/GeoffHeadshot.png" width="100px" >](https://www.linkedin.com/in/geoffrey-sun/) | [<img src="./public/AndyHeadshot.jpeg" width="100px" >](https://www.linkedin.com/in/andrewclarkwagner/) | [<img src="./public/BrianHeadshot.jpeg" width="100px" >](https://www.linkedin.com/in/brianhwang2/) |
