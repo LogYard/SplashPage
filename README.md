@@ -138,22 +138,31 @@ In order to start logging in your application and using LogYard the LogYard GUI,
         ```JavaScript
             // Template:
             logyard(
-                [Error Type] , 
-                [Message] , 
-                { [ Context(s) ] } 
+                'errorType', 
+                'message' , 
+                { 
+                    ContextOneKey : ContextOneValue, 
+                    ContextTwoKey : ContextTwoValue,
+                } 
             );
-            // or 
+            /* or */
             logyardbackend(
-                [Error Type] , 
-                [Message] , 
-                { [ Context(s) ] } 
+                'errorType', 
+                'message' , 
+                { 
+                    ContextOneKey : ContextOneValue, 
+                    ContextTwoKey : ContextTwoValue,
+                } 
             );
             
             // Example:
             logyard(
                 'error', 
                 'authController.setCookie failure', 
-                { Location: controllers/authController }
+                { 
+                    Location: 'controllers/authController', 
+                    Server: 6,
+                }
             )
         ```
 
