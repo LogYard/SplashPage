@@ -50,7 +50,7 @@ Our mission is to simplify log management for our users. With our custom logging
 
 # <img width='20px' src='./public/Icon.png'/> Demo Our Product
 
-We created a demo project for you to easily test our product's logging functionality and use our frontend manager/visualizer. Follow the steps below in order to properly run the demo.
+We created a demo project for you to easily test our product's logging functionality and use our GUI. Follow the steps below in order to properly run the demo.
 
 1. LogYard
 
@@ -197,7 +197,7 @@ In order to start logging in your application and using LogYard the LogYard GUI,
 3. Copy and paste the following code into your newly created 'default.json' file.
     ```json
         {
-            "uri": "mongodb://localhost:5555",
+            "uri": "mongodb://localhost:8000",
             "level": "silly",
             "dbName": "LogYard"
         }
