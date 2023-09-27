@@ -170,6 +170,18 @@ In order to start logging in your application and using LogYard the LogYard GUI,
 ## 3. Setting up .config file
 1. In your project's root directory, create a new directory named 'config'.
 2. Within this new 'config' directory, create a new file titled 'default.json'.
+    ```
+        my_project  
+             └─── config
+             │    └─── default.json
+             └─── node_modules
+             │
+             └─── src
+             │
+             └─── server
+             │
+             other root files...
+    ```
 3. Copy and paste the following code into your newly created 'default.json' file.
     ```json
         {
