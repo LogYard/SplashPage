@@ -169,11 +169,14 @@ In order to start logging in your application and using LogYard the LogYard GUI,
 ## 2. Setting up .env file
 1. Copy and paste the following code into your .env file.
     ```env
-        VITE_USER_PASSWORD = password // server password on login
+        VITE_USER_PASSWORD = password
         VITE_DB_URI = mongodb://mongodb:27017
-        VITE_DB_DBNAME =  LogYard // this must match the dbName in your config/default.json file.
+        VITE_DB_DBNAME =  LogYard
     ```
 2. Change .env variables to meet your preferences.
+    - VITE_USER_PASSWORD - This is the 'server password' used on login.
+    - VITE_DB_URI - Database URI that you'd like to connect to. You can put your own MongoDB URI here to have logs and other app information sent there.
+    - VITE_DB_DBNAME - This must match 'dbName' in your config/default.json file.
 
 
 ## 3. Setting up .config file
