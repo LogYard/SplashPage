@@ -48,24 +48,6 @@ Our mission is to simplify log management for our users. With our custom logging
     - Save custom filters to your account.
     - Visualize your logs through several graph types. Using log-type filtering and time selection, only visualize the logs you need.
 
-## Interface
-
- - Docker Container
-
-    <img width='' src='./public/GIF/DockerDesktop.gif'/>
-
-- Login / Signup
-
-    <img width='' src='./public/GIF/AuthRouterNav.gif'/>
-
-- Dashboard / Filtering
-
-    <img width='' src='./public/GIF/SaveFilter.gif'/>
-
-- Visualizer
-
-    <img width='' src='VISUALIZER GIF'/>
-
 # <img width='20px' src='./public/Icon.png'/> Demo Our Product
 
 We created a demo project for you to easily test our product's logging functionality and use our frontend manager/visualizer. Follow the steps below in order to properly run the demo.
@@ -112,6 +94,7 @@ We created a demo project for you to easily test our product's logging functiona
     4. Interacting with the demo app will generate logs that can be seen in the LogYard GUI! Go ahead and give it a try - filter and visualize these logs!
 
         <img width='' src='./public/GIF/SaveFilter.gif'/>
+        <img width='' src='placeholder.jpg'/> Visualizer GIF
     
         We hope you find our product useful. Once you're done, implement the logger package into your own application to view your own logs in our app! (see [below](#Use-Our-Product))
 
@@ -213,6 +196,7 @@ Directions here... -->
 7. Interacting with your app to invoke your logging functions will populate them in the LogYard application, allowing them to be analyzed, filtered, and visualized!
 
     <img width='' src='./public/GIF/SaveFilter.gif'/>
+    <img width='' src='placeholder.jpg'/> Visualizer GIF
 
 # <img width='20px' src='./public/Icon.png' /> FAQ
 
