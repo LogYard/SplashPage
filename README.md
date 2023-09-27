@@ -29,7 +29,7 @@
 
 ## Introduction
 
-Our mission is to simplify log management for our users. With our custom logging package that seamlessly integrates into your code, alongside the LogYard application, you can easily visualize and analyze logs using multiple, customizable graphs based on timeframes and log types. Our platform also offers dynamic log filtering, allowing users to group logs as well as filter them based on their individual properties. These features aim to make log management a breeze - helping you monitor and troubleshoot effortlessly. 
+Our mission is to simplify log management for our users. With our custom logging package implemented in your code, alongside the LogYard GUI, you can easily visualize and analyze logs using multiple, customizable graphs based on time and log types. Our platform also offers dynamic log filtering, allowing users to group logs as well as filter them based on their individual properties. These features aim to make log management a breeze - helping you monitor and troubleshoot effortlessly. 
 
 ## Features
 
@@ -47,20 +47,24 @@ Our mission is to simplify log management for our users. With our custom logging
     - Sort and filter logs based on level and customizable properties.
     - Save custom filters to your account.
     - Visualize your logs through several graph types. Using log-type filtering and time selection, only visualize the logs you need.
-<!-- 
-## Walkthrough
+
+## Interface
+
+ - Docker Container
+
+    <img width='' src='./public/GIF/DockerDesktop.gif'/>
 
 - Login / Signup
 
-    <img width='' src='LOGIN GIF'/>GIF
+    <img width='' src='./public/GIF/AuthRouterNav.gif'/>
 
 - Dashboard / Filtering
 
-    <img width='' src='DASHBOARD GIF'/>GIF
+    <img width='' src='./public/GIF/SaveFilter.gif'/>
 
 - Visualizer
 
-    <img width='' src='VISUALIZER GIF'/>GIF -->
+    <img width='' src='VISUALIZER GIF'/>
 
 # <img width='20px' src='./public/Icon.png'/> Demo Our Product
 
@@ -70,45 +74,50 @@ We created a demo project for you to easily test our product's logging functiona
 
     1. Ensure you have Docker Desktop installed and opened, and that you are signed in with your Docker account.
 
-    2. In your browser, navigate to the [LogYard GitHub repository](https://github.com/oslabs-beta/LogYard).
-
-    3. Clone this repository using the following terminal command:
+    2. Clone the LogYard repository using the following terminal command (you can visit the repo [here](https://github.com/oslabs-beta/LogYard)):
 
         `git clone https://github.com/oslabs-beta/LogYard.git`
 
-    4. Open this repo in your terminal and enter the following command lines in your terminal to properly create a Docker image.
+    3. Open the LogYard repo that you just cloned in your terminal and enter the following command lines to properly create and run the Docker image.
 
-        `docker-compose ...`
+        `docker build -t logyard .`
 
-        `docker-...`
+        `docker compose up`
 
-    5. Open Docker Desktop and navigate to your containers.
+    4. Open Docker Desktop and navigate to Containers.
 
-    6. To open the LogYard application, click on the port for ...
+    5. To open the LogYard application, click on the logyard app_container running on port '5555:5555'.
 
-    7. Filter and visualize your data - see how [here](#Using-GUI).
+        <img width='' src='./public/GIF/DockerDesktop.gif'/>
+
+    6. You should now see LogYard's user sign-in page in your browser (shown below). To sign in as a guest, enter your server password located in your .env file (named 'VITE_USER_PASSWORD'). Or sign-up to have access to additional features, such as the ability to save custom log filters.
+        <img width='' src='./public/GIF/AuthRouterNav.gif'/>
 
 2. Demo App
 
     1. Navigate to our [demo app's GitHub repository](https://www.google.com/).
 
-    2. Clone this repository using the following command in your terminal:
+    2. Clone the LogYard demo app's repository using the following terminal command (you can visit the repo [here](https://github.com/OSP7/LogYard-Demo-App)):
 
-        `git clone https://ourdemoapprepopage.com`
+        `git clone https://github.com/OSP7/LogYard-Demo-App.git`
 
-    3. Within the demo app's directory, install package dependencies and run the app using the following terminal commands, in this order:
+    3. Within the demo app's directory, install package dependencies and run the app using the following terminal commands, in order:
 
         `npm install`
 
         `npm run dev`
 
-- After following the above steps, the demo app should now be visible on localhost:0000 and the LogYard GUI should be available on localhost:9999.
+        After following the above steps, the demo app should now be visible on localhost:0000 and the LogYard GUI should remain accessible through your Docker container.
 
-    4. Implement our package into the demo app using [these steps](#Using-packages).
+    4. Interacting with the demo app will generate logs that can be seen in the LogYard GUI! Go ahead and give it a try - filter and visualize these logs!
+
+        <img width='' src='./public/GIF/SaveFilter.gif'/>
+    
+        We hope you find our product useful. Once you're done, implement the logger package into your own application to view your own logs in our app! (see [below](#Use-Our-Product))
 
 # <img width='20px' src='./public/Icon.png'/> Use Our Product
 
-In order to start logging in your application and using LogYard, follow the steps below to install the proper dependencies.
+In order to start logging in your application and using LogYard the LogYard GUI, follow the steps below to install the proper dependencies.
 
 ## 1. Logging Packages
 
@@ -116,15 +125,13 @@ In order to start logging in your application and using LogYard, follow the step
 
 1. Navigate to the directory in which you would like to install our packages. This should be the root directory for your project.
 
-2. In your terminal, type the following commands to install the appropriate packages for frontend and backend logging capabilities.
+2. In your terminal, type the following command to install the appropriate packages for frontend and backend logging capabilities.
 
-    `npm install logyard`
-
-    `npm install logyardbackend`
+    `npm install logyard logyardbackend`
 
 ### Using packages
 
-1. Navigate to the file that you would like to use the logger in. 
+1. Navigate to the specific file that you would like to use the logger in. 
 
 2. At the top of your file, import the appropriate logger using one of the following line of code: 
 
@@ -132,28 +139,34 @@ In order to start logging in your application and using LogYard, follow the step
 
     - For Backend Logs: `import logyard from 'logyardbackend'`
 
-3. Once the frontend logger has been imported, embed the 'logyard' function with the following argument options and by following the template below.
+3. Once the logger has been imported, embed the 'logyard' function with the following argument options and by following the template below.
 
     - Arguments:
 
-        - Error Type (Type: String) : 
+        1. Error Type (Type: String) : 
             - 'error', 'warn', 'info', 'http', 'verbose', 'debug', or 'silly'.
 
-        - Message (Type: String) : 
+        2. Message (Type: String) : 
             - Any message you wish to be sent with the log.
 
-        - Context(s) (Type: Object) :
+        3. Context(s) (Type: Object) :
             - Key-value pairs for each context you wish to include.
 
-        ```env
-            Template:
+        ```JavaScript
+            // Template:
             logyard(
                 [Error Type] , 
                 [Message] , 
                 { [ Context(s) ] } 
             );
+            // or 
+            logyardbackend(
+                [Error Type] , 
+                [Message] , 
+                { [ Context(s) ] } 
+            );
             
-            Example:
+            // Example:
             logyard(
                 'error', 
                 'authController.setCookie failure', 
@@ -162,18 +175,44 @@ In order to start logging in your application and using LogYard, follow the step
         ```
 
 ## 2. Setting up .env file
-Directions here...
+1. Copy and paste the following code into your .env file.
+    ```env
+        VITE_USER_PASSWORD = password
+        VITE_DB_URI = mongodb://mongodb:27017
+        VITE_DB_DBNAME =  LogYard
+    ```
+2. Change VITE_USER_PASSWORD to whatever you'd like your log in 'server password' to be.
 
-## 3. Setting up .config file(s)
-Directions here...
 
-## 4. LogYard GUI
+<!-- ## 3. Setting up .config file(s)
+Directions here... -->
 
-### Installing GUI
-... copy directions from demo...
+## 3. LogYard GUI
 
-### Using GUI
-For any inquiries about installation or usage, please feel free to contact the team at logyardOSP@gmail.com.
+1. Ensure you have Docker Desktop installed and opened, and that you are signed in with your Docker account.
+
+2. Clone the LogYard repository using the following terminal command (you can visit the repo [here](https://github.com/oslabs-beta/LogYard)):
+
+    `git clone https://github.com/oslabs-beta/LogYard.git`
+
+3. Open the LogYard repo that you just cloned in your terminal and enter the following command lines to properly create and run the Docker image.
+
+    `docker build -t logyard .`
+
+    `docker compose up`
+
+4. Open Docker Desktop and navigate to Containers.
+
+5. To open the LogYard application, click on the logyard app_container running on port '5555:5555'.
+
+    <img width='' src='./public/GIF/DockerDesktop.gif'/>
+
+6. You should now see LogYard's user sign-in page in your browser (shown below). To sign in as a guest, enter your server password located in your .env file (named 'VITE_USER_PASSWORD'). Or sign-up to have access to additional features, such as the ability to save custom log filters.
+    <img width='' src='./public/GIF/AuthRouterNav.gif'/>
+
+7. Interacting with your app to invoke your logging functions will populate them in the LogYard application, allowing them to be analyzed, filtered, and visualized!
+
+    <img width='' src='./public/GIF/SaveFilter.gif'/>
 
 # <img width='20px' src='./public/Icon.png' /> FAQ
 
@@ -189,7 +228,7 @@ For any inquiries about installation or usage, please feel free to contact the t
 4. Can I use this for state replication?
     - LogYard does not provide state replication. It is intended as a lightweight solution for active logging analysis not an all encompassing tool.
 
-5. What if my app is running on port 8080?
+5. What if my app is running on port 5555?
     - answer
 
 # <img width='20px' src='./public/Icon.png' /> Contributing
