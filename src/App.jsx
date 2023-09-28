@@ -16,7 +16,7 @@ const App = () => {
       {<NavBar/>}
 
       {/* rotating logo */}
-      <img src="/LogoPicture.png" alt="" className='logo mx-auto mt-12 h-[20em] p-[1.5em]'/>
+      <img src="/LogoPicture.png" alt="" className='logo glow mx-auto mt-12 h-[20em] p-[1.5em]'/>
 
       {/* main page text */}
       <section id='key-phrases-box' className=''>

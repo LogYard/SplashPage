@@ -17,8 +17,8 @@
   transition: filter 300ms;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #5e3c09e1);
+.glow:hover {
+  filter: drop-shadow(0 0 5em #5F7161);
 }
 
 @keyframes  logo-spin {

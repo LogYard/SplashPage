@@ -28,7 +28,8 @@ const TechSpecs = () => {
 
           {directions.map((step) => {
             return (
-              <div key={Math.random()} className="relative h-[30em] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 border border-gray-500">
+              <div key={Math.random()} className="relative h-fit rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 border border-gray-500">
+
                 <div className="pt-5 px-5">
                   <h3 className="text-2xl font-bold text-center tracking-tight text-gray-900 dark:text-white">
                     <p>{step.name}</p>
@@ -37,8 +38,10 @@ const TechSpecs = () => {
                     {step.description}
                   </p>
                 </div>
+
                 {/* GIF */}
-                <img src={step.gif} className='absolute px-3 pb-4 bottom-0' />
+                <img src={step.gif} className='px-3 pb-4 bottom-0' />
+
               </div>
             );
           })}
