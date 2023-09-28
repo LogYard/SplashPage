@@ -47,13 +47,16 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="">
+    <section className="pb-24">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+        <div className='pb-12 font-medium text-5xl text-center'> 
+          Our Team 
+        </div>
         <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
           
           {teamMembers.map((member) => {
             return (
-              <div className="items-center flex bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div key={Math.random()} className="items-center flex bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <div>
                   <img
                     className="max-h-72 px-4 py-4"
@@ -68,7 +71,7 @@ const TeamSection = () => {
                   <span className="text-gray-500 dark:text-gray-400">
                     {member.role}
                   </span>
-                  <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                  <p className="mt-0 mb-0 font-light text-sm h-3 text-transparent hover:cursor-default">
                     {member.motto}
                   </p>
                   <ul className="flex space-x-4 sm:mt-0">

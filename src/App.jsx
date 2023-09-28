@@ -2,9 +2,10 @@ import React from 'react';
 import './App.css';
 
 import NavBar from './Navbar.jsx';
-import DirectionsForInstall from './DirectionsForInstall.jsx';
-import DirectionsForUse from './DirectionsForUse.jsx';
+import TechSpecs from './TechSpecs.jsx';
+import Links from './Links.jsx';
 import TeamSection from './TeamSection.jsx';
+
 
 const App = () => {
 
@@ -15,14 +16,12 @@ const App = () => {
       {<NavBar/>}
 
       {/* rotating logo */}
-      <a id='rotating-logo' href="https://github.com/oslabs-beta/LogYard">
-        <img src="LogoPicture.png" alt="" className='logo mx-auto mt-12 h-[20em] p-[1.5em]'/>
-      </a>
+      <img src="/LogoPicture.png" alt="" className='logo mx-auto mt-12 h-[20em] p-[1.5em]'/>
 
       {/* main page text */}
       <section id='key-phrases-box' className=''>
         <div className='text-center pt-5 font-medium text-green-600 text-MD'>
-          UNDERSTAND THE <strong className='underline underline-offset-2'>HOW</strong> AND <strong className='underline underline-offset-2'>WHEN</strong> OF YOUR CODE
+          UNDERSTAND THE <strong className='underline underline-offset-2'>HOW</strong>, <strong className='underline underline-offset-2'>WHEN</strong> AND <strong className='underline underline-offset-2'>WHERE</strong> OF YOUR CODE
         </div>
         <div className='text-center pt-10 font-medium text-6xl'>
           Track your logs.
@@ -35,39 +34,35 @@ const App = () => {
         </div>
       </section>
 
-      {/* applicaion home page photo */}
+      {/* applicaion dashboard photo */}
       <section id='home-page-display' className=''>
         <div id='photo-box' className='w-[80%] mx-auto mt-16 bg-gray-500/50 rounded-lg'>
-          <img src="SampleHomePage.png" alt="" className='p-4'/>
+          <img src="/DashboardPage.png" alt="" className='p-4'/>
+        </div>
+      </section>
+
+      {/* applicaion visualize photo */}
+      <section id='home-page-display' className=''>
+        <div id='photo-box' className='w-[80%] mx-auto mt-8 bg-gray-500/50 rounded-lg'>
+          <img src="/VisualizePage.png" alt="" className='p-4'/>
         </div>
       </section>
 
       {/* a dividing line */}
       <hr className="h-px my-16 bg-gray-200 border-0 dark:bg-gray-700" />
 
-      {/* directions for installing app */}
-      <div>
-        <div className='ml-10 pb-6 font-medium text-5xl text-center'> Install Our Product </div>
-        {<DirectionsForInstall/>}
-      </div>
-
-      {/* a dividing line */}
-      <hr className="h-px mt-4 mb-16 bg-gray-200 border-0 dark:bg-gray-700" />
-
-      {/* directions for using app */}
-      <div>
-        <div className='ml-10 pb-6 font-medium text-5xl text-center'> Use Our Product </div>
-        {<DirectionsForUse/>}
-      </div>
+      {<TechSpecs/>}
 
       {/* a dividing line */}
       <hr className="h-px my-16 bg-gray-200 border-0 dark:bg-gray-700" />
 
-      {/* team section */}
-      <section id='meet-the-team' className='pb-24'>
-        <div className='ml-10 pb-6 font-medium text-5xl text-center'> Our Team </div>
-        {<TeamSection/>}
-      </section>
+      {<Links/>}
+
+      {/* a dividing line */}
+      <hr className="h-px my-16 bg-gray-200 border-0 dark:bg-gray-700" />
+
+      {<TeamSection/>}
+
 
     </div>
   );
