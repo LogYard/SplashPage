@@ -9,29 +9,38 @@ const Links = () => {
     <section className="">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
 
-        <div className='pb-6 font-medium text-5xl text-center'> 
+        <div className='mb-16 font-medium text-5xl text-center'> 
 					Links 
         </div>
 
-        <div key={Math.random()} className="relative rounded-lg shadow w-fit mx-auto mt-4 dark:bg-gray-800 dark:border-gray-700 border border-gray-500">
+        <div className='text-xl w-[60%] text-center mx-auto'>
+          For a demo, and for instructions on how to get started with LogYard, visit our GitHub repository!
+        </div>
+
+        <div key={Math.random()} className="relative rounded-lg shadow w-fit mx-auto mt-4 dark:bg-gray-800 dark:border-gray-400 border border-gray-500">
           <div className="py-5 px-5">
             <h3 className="text-2xl text-center tracking-tight text-gray-900 dark:text-white">
               <span>
-                <a className='flex flex-row text-blue-400 hover:cursor-pointer' href="https://github.com/oslabs-beta/LogYard">
-                  <img src="/githubIcon.png" alt="" className='h-12'/>
-                  <img src="/GitHubLogo.png" alt="" className='h-12'/>
+                <a className='flex flex-row hover:cursor-pointer' href="https://github.com/oslabs-beta/LogYard">
+                  
+                  <img src="/githubIcon.png" alt="" className='h-8'/>
+                  <img src="/GitHubLogo.png" alt="" className='h-8'/>
                 </a>
               </span>
             </h3>
           </div>
         </div>
+
+        <div className='text-xl w-[60%] mt-16 text-center mx-auto'>
+          To read more about our product, check out our Medium article!
+        </div>
 			
-        <div key={Math.random()} className="relative rounded-lg shadow w-fit mx-auto mt-4 dark:bg-gray-800 dark:border-gray-700 border border-gray-500">
+        <div key={Math.random()} className="relative rounded-lg shadow w-fit mx-auto mt-4 dark:bg-gray-800 dark:border-gray-400 border border-gray-500">
           <div className="py-5 px-5">
             <h3 className="text-2xl text-center tracking-tight text-gray-900 dark:text-white">
               <span>
-                <a className='text-blue-400 hover:cursor-pointer' href="https://medium.com/@andrewclarkwagner/logyard-a-new-log-management-and-visualization-platform-for-developers-3df574575586">
-                  <img src="/MediumLogo.png" alt="" className='h-12'/>
+                <a className='flex flex-row hover:cursor-pointer' href="https://medium.com/@andrewclarkwagner/logyard-a-new-log-management-and-visualization-platform-for-developers-3df574575586">
+                  <img src="/MediumLogo.png" alt="" className='h-8'/>
                 </a>
               </span>
             </h3>
