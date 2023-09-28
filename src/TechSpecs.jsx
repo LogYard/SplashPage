@@ -7,7 +7,7 @@ const TechSpecs = () => {
   const directions = [
     {
       name: 'Log Centralization',
-      description: 'With the logging packages created by LogYard, you can essentially insert customizable logs into every portion of your full-stack application. Include a level, message, and optional context object, and logs will be sent to a local containerized database - or, if you prefer, to your own MongoDB on the cloud. These logs will then be visible on our app\'s dashboard!',
+      description: 'With the logging packages created by LogYard, you can insert customizable logs into every portion of your full-stack application. Include a level, message, and optional context object, and logs will be sent to a local containerized database - or, if you prefer, to your own MongoDB on the cloud. These logs will then be visible on our app\'s dashboard!',
       gif: '/GIF/SaveFilter.gif',
     },
     {
