@@ -28,7 +28,7 @@ const TechSpecs = () => {
 
           {directions.map((step) => {
             return (
-              <div key={Math.random()} className="relative h-fit rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 border border-gray-500">
+              <div key={Math.random()} className="relative h-fit rounded-lg shadow border border-gray-500">
 
                 <div className="pt-5 px-5">
                   <h3 className="text-2xl font-bold text-center tracking-tight text-gray-900 dark:text-white">
