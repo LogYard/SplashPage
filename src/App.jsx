@@ -21,7 +21,7 @@ const App = () => {
       {/* main page text */}
       <section id='key-phrases-box' className=''>
         <div className='text-center pt-5 font-medium text-green-600 text-MD'>
-          UNDERSTAND THE <strong className='underline underline-offset-2'>HOW</strong>, <strong className='underline underline-offset-2'>WHEN</strong> AND <strong className='underline underline-offset-2'>WHERE</strong> OF YOUR CODE
+          UNDERSTAND THE <strong className='font-bold'>HOW</strong>, <strong className='font-bold'>WHEN</strong>, AND <strong className='font-bold'>WHERE</strong> OF YOUR CODE
         </div>
         <div className='text-center pt-10 font-medium text-6xl'>
           Track your logs.
