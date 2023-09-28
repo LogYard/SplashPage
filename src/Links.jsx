@@ -47,7 +47,21 @@ const Links = () => {
           </div>
         </div>
 			
+        <div className='text-xl w-[60%] mt-16 text-center mx-auto'>
+          Don't forget to visit us on LinkedIn!
+        </div>
 			
+        <div key={Math.random()} className="relative rounded-lg shadow w-fit mx-auto mt-4 dark:bg-gray-800 dark:border-gray-400 border border-gray-500">
+          <div className="py-5 px-5">
+            <h3 className="text-2xl text-center tracking-tight text-gray-900 dark:text-white">
+              <span>
+                <a className='flex flex-row hover:cursor-pointer' href="https://www.linkedin.com/company/logyard">
+                  <img src="/LinkedInColored.png" alt="" className='h-8'/>
+                </a>
+              </span>
+            </h3>
+          </div>
+        </div>
 			
 			
 			
