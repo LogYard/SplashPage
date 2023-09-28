@@ -34,7 +34,7 @@ const TechSpecs = () => {
                   <h3 className="text-2xl font-bold text-center tracking-tight text-gray-900 dark:text-white">
                     <p>{step.name}</p>
                   </h3>
-                  <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                  <p className="mt-3 mb-4 font-light text-white">
                     {step.description}
                   </p>
                 </div>
