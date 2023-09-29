@@ -12,7 +12,7 @@ const TechSpecs = () => {
     },
     {
       name: 'Log Analysis',
-      description: 'After generating logs in your app, you can use the LogYard app to view, filter, and group your logs by level, message, or a specific context property that you included. Logs can also be visualized within the app based on your filters and time selections, allowing for time-based analsis of your log\'s properties.',
+      description: 'After generating logs in your app, you can use the LogYard app to view, filter, and group your logs by level, message, or a specific context property that you included. Logs can also be visualized within the app based on your filters and time selections, allowing for time-based analysis of your log\'s properties.',
       gif: '/GIF/GraphFilterAndTime.gif',
     },
   ];
